@@ -1,200 +1,59 @@
-<div align="center">
-  <br>
+<!-- 1. 테마 찾는거 
+2. 내용 정리 
+3. 댓글 기능 넣기  
+4. 문제 생긴거 해결한거
+5. favicon 넣은거
+6. 루비랑 지킬 다운로드 받은거  -->
 
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
-    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
-  </a>
+### 1단계 GitHub page 시작하기 
 
-  <h1>JEKYLL YAT THEME</h1>
+## 1. Repository 생성
 
-</div>
+우선 깃허브에서 이름이 didskfo.github.io인 Repository를 생성한다. 그리고 Settings에 들어가서 왼쪽에 Code and automation 파트의 Pages에 들어간다. 그리고 나서 Source가 Deploy from a branch로 되어있는 것을 GitHub Actions로 바꾼다. 그러면 사진과 같은 상태가 된다. 
+![readme1](assets/images/readme/readme1.JPG)
+여기서 GitHub Pages Jekyll의 Configure을 누르면 
+![readme2](assets/images/readme/readme2.JPG)
+로 이동하고 오른쪽 위의 초록색 버튼 Start commit 버튼을 누른 뒤 초록색 버튼인 Commit new file 버튼을 클릭한다. 
+그러면 '<> Code' 페이지의 오른쪽에 
+![readme3](assets/images/readme/readme3.JPG)
+처럼 github-pages가 Active 된다. 
 
-<h4 align="center">
-  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
-</h4>
+## 2. Local-Remote Repository 연동 
 
-<p align="center">
-  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
-    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
-      alt="Github Pages" />
-  </a>
+git clone을 하기 위해서 방금 만든 Repository의 주소를 복사한다. 
+![readme4](assets/images/readme/readme4.JPG)
+그리고 명령 프롬프트널에서 'git clone 방금 복사한 Repository의 주소' 를 입력한다. 
+만들어진 폴더로 이동해서 'code .' 을 하면 vscode에서 코드를 수정할 수 있게 된다. 
 
-  <a href="https://badge.fury.io/rb/jekyll-theme-yat">
-    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
-      alt="Gem Version" />
-  </a>
+## 3. Commit 하기 
 
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
-      alt="License: MIT" />
-  </a>
+vscode 왼쪽을 보면 
+![readme5](assets/images/readme/readme5.JPG)
+이렇게 생긴 것이 있는데 클릭하면 
+![readme6](assets/images/readme/readme6.JPG)
+이렇게 된다. 변경사항이 보여지고 Message 부분에 commit message를 입력하고 Commit 버튼을 누르면 
+![readme7](assets/images/readme/readme7.JPG)
+이렇게 변경되면 Sync Changes 버튼을 누르면 Commit이 완료된다. 
 
-  <a href="https://liberapay.com/jeffreytse">
-    <img src="https://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
-      alt="Donate (Liberapay)" />
-  </a>
+### 2단계 테마 추가하기 
 
-  <a href="https://patreon.com/jeffreytse">
-    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
-      alt="Donate (Patreon)" />
-  </a>
+## 1. Jekyll 설치하기
 
-  <a href="https://ko-fi.com/jeffreytse">
-  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
-  alt="Donate (Ko-fi)" />
-  </a>
-</p>
+우선 Jekyll 공식 홈페이지에 들어간다. 들어가서 DOCS로 이동하면 
+![readme8](assets/images/readme/readme8.JPG)
+이 화면이 뜬다. 저기서 루비 개발환경을 설치하기 위해 클릭하면 
+![readme9](assets/images/readme/readme9.JPG)
+이런 화면이 뜬다. 윈도우를 사용하고 있기 때문에 윈도우즈를 클릭해서 RubyInstaller 다운로드 페이지로 이동해서 Ruby와 Dekit을 한 번에 설치하는 버전을 다운로드 받는다. 
+루비 설치가 완료되면 명령 프롬프트에서 'gem install jekyll bundler' 를 입력한다. 설치가 완료되면 'jekyll -v' 를 통해 올바르게 설치되었는지 확인한다. 
+이제 터미널에서 'jekyll serve' 를 실행하면 localhost:4000으로 접속할 수 있는 링크가 나온다. 
 
-<div align="center">
-  <sub>Built with ❤︎ by
-  <a href="https://jeffreytse.net">jeffreytse</a> and
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
-  </sub>
-</div>
+## 2. 테마 고르기 
 
-<br>
+다양한 Jekyll 테마가 있는 사이트에서 테마를 골랐다. 
+![readme10](assets/images/readme/readme10.JPG)
+마음에 드는 테마를 발견해서 Homepage 버튼을 누르면 Github 페이지로 이동한다. 그 Repository를 포크떠서 내 깃허브로 가져온 후 이름을 didksfo.github.io로 바꿔주었다.
 
-Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-_YAT (Yet Another Theme)_ is a modern responsive theme. It's quite
-clear, clean and neat for writers and posts. **If you are an elegant
-writer and focus on content, don't miss it.**
+### 3단계 댓글 기능 추가하기 
 
-<p align="center">
-Like this elegant theme? You can give it a star or sponsor me!<br>
-I will respect your crucial support and say THANK YOU!
-</p>
+## 1. dispus
 
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-<h4 align="center">BANNER</h4>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/123897812-ae729a00-d996-11eb-96b8-b76ba926f555.gif" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-## Features
-
-- Support beautiful **Night Mode**.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
-
-Also, visit the [Live Demo][yat-live-demo] site for the theme.
-
-## Installation
-
-There are three ways to install:
-
-- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
-- Forking/directly copying all of the theme files into your project.
-
-### Gem-based Theme Method
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-theme-yat"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: jekyll-theme-yat
-```
-
-And then execute:
-
-```bash
-$ bundle
-```
-
-Or install it yourself as:
-
-```bash
-$ gem install jekyll-theme-yat
-```
-
-### Remote Theme Method with GitHub Pages
-
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
-
-To install:
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "github-pages", group: :jekyll_plugins
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "jeffreytse/jekyll-theme-yat"
-```
-
-And then execute:
-
-```bash
-$ bundle
-```
-
-### GitHub Pages without limitation
-
-GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
-
-To use the third-party gem in GitHub Pages without limitation:
-
-Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
-
-## Usage
-
-Add or update your available layouts, includes, sass and/or assets.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
-
-## Contributing
-
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
-
-You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
-
-## License
-
-This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
-
-<!-- External links -->
-
-[jekyll]: https://jekyllrb.com/
-[yat-git-repo]: https://github.com/jeffreytse/jekyll-theme-yat/
-[yat-live-demo]: https://jeffreytse.github.io/jekyll-theme-yat/
-[jekyll-spaceship]: https://github.com/jeffreytse/jekyll-spaceship
-[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[highlight-js]: https://github.com/highlightjs/highlight.js
