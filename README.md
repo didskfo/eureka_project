@@ -16,12 +16,14 @@
 로 이동하고 오른쪽 위의 초록색 버튼 Start commit 버튼을 누른 뒤 초록색 버튼인 Commit new file 버튼을 클릭한다. 
 그러면 '<> Code' 페이지의 오른쪽에 
 ![readme3](assets/images/readme/readme3.JPG)
+
 처럼 github-pages가 Active 된다. 
 
 ## 2. Local-Remote Repository 연동 
 
 git clone을 하기 위해서 방금 만든 Repository의 주소를 복사한다. 
 ![readme4](assets/images/readme/readme4.JPG)
+
 그리고 명령 프롬프트널에서 'git clone 방금 복사한 Repository의 주소' 를 입력한다. 
 만들어진 폴더로 이동해서 'code .' 을 하면 vscode에서 코드를 수정할 수 있게 된다. 
 
@@ -31,8 +33,10 @@ vscode 왼쪽을 보면
 ![readme5](assets/images/readme/readme5.JPG)
 이렇게 생긴 것이 있는데 클릭하면 
 ![readme6](assets/images/readme/readme6.JPG)
+
 이렇게 된다. 변경사항이 보여지고 Message 부분에 commit message를 입력하고 Commit 버튼을 누르면 
 ![readme7](assets/images/readme/readme7.JPG)
+
 이렇게 변경되면 Sync Changes 버튼을 누르면 Commit이 완료된다. 
 
 ### 2단계 테마 추가하기 
