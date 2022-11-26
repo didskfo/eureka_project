@@ -89,4 +89,4 @@ disqus를 사용하였을 때 오류가 나서 다른 방법으로 utterances를
 [Favicon&AppIconGenerator](https://www.favicon-generator.org/) 사이트로 가서 
 ![readme14](assets/images/readme/readme14.JPG)
 여기에서 파일을 선택한 뒤 Create Favicon 버튼을 누르면 favicon 이미지가 만들어진다. 그 중에 16X16 사이즈의 이미지를 assets 폴더에 저장하고 
-head.html 파일에 '<link rel="icon" type="image/x-icon" href="assets/images/favicon.png">' 를 추가한다. 그러면 완성이다. 
+head.html 파일에 ```<link rel="icon" type="image/x-icon" href="assets/images/favicon.png">``` 를 추가한다. 그러면 완성이다. 
