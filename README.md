@@ -58,3 +58,35 @@ vscode 왼쪽을 보면
 
 ## 1. dispus
 
+disqus.com 사이트에서 회원가입을 하고 필요한 코드를 추가하고 원하는 곳에 'comments: true'를 추가했는데 두 개의 포스트에서만 나타나고 다른 포스트에서는 나타나지 않는 문제가 발생했다.
+
+## 2. utterances
+
+disqus를 사용하였을 때 오류가 나서 다른 방법으로 utterances를 선택하였다. 
+![readme11](assets/images/readme/readme11.JPG)
+이 사이트에 들어가서 
+![readme12](assets/images/readme/readme12.JPG)
+여기의 'utterances app'을 클릭한 후 오른쪽의 'configure' 버튼을 누른 뒤 내 깃허브를 선택한다. 
+그 후 'repo: owner/repo' 라고 쓰여있는 곳을 'didskfo/didskfo.github.io'로 변경한다. 그 후
+![readme13](assets/images/readme/readme13.JPG)
+이 코드를 복사해서 추가하면 되는데 나는 'utterances.html' 파일에 이미 있었기 때문에 따로 추가는 안했다. 
+이 댓글 기능은 깃허브 인증을 하면 댓글을 남길 수 있는데 댓글을 쓰는 것은 가능한데 등록이 되지 않았다. 원인은 utterances는 깃허브의 'issues'를 데이터 저장소처럼 쓰는 데 
+내가 포크 떠온 Repository에는 issues가 없었기 때문이다. 
+이를 해결하기 위해 새로운 Repository를 생성하고 git clone을 해서 폴더를 만든 뒤 원래 있던 폴더에서 .github 폴더를 제외하고 나머지를 이동시켰다. 
+그랬더니 정상적으로 추가가 되는 것을 볼 수 있다. 
+
+### 4단계 내용 수정하기 
+
+## 1. posts 수정하기 
+
+관련있는 git, github, jekyll부터 markdown, html, css에 대한 내용을 정리한 post로 수정했다. 
+
+### 5단계 favicon 추가하기 
+
+## 1. favicon 만들기 
+
+원하는 이미지를 저장한다. 확장자는 png와 jpg 모두 가능하다.
+[Favicon&AppIconGenerator](https://www.favicon-generator.org/) 사이트로 가서 
+[readme14](assets/images/readme/readme14.JPG)
+여기에서 파일을 선택한 뒤 Create Favicon 버튼을 누르면 favicon 이미지가 만들어진다. 그 중에 16X16 사이즈의 이미지를 assets 폴더에 저장하고 
+head.html 파일에 '<link rel="icon" type="image/x-icon" href="assets/images/favicon.png">' 를 추가한다. 그러면 완성이다. 
