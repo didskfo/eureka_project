@@ -13,9 +13,13 @@ tags: etc
 # 계정, 스트림 생성
 
 [google_analytics](https://analytics.google.com/) 이 사이트에서 계정을 생성한다.
+
 왼쪽의 관리를 누르면 관리자 화면으로 이동한다. 
+
 데이터 스트림을 클릭하고 웹 항목에 블로그 주소를 입력하여 스트림을 추가한다. 
+
 그렇게 하면 측정 ID가 생성되는데 그 ID를 _config.yml 파일의 google_analytics: [Tracking ID] 부분을 
+
 google_analytics: [G-6JCBQY7VL8] 로 수정한다. 
 
 # 블로그에 붙이기 
