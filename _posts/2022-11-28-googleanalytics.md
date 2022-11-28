@@ -13,7 +13,7 @@ tags: etc
 # 계정, 스트림 생성
 
 [google_analytics](https://analytics.google.com/) 이 사이트에서 계정을 생성한다.
-![ga1](assets/images/ga1.JPG)
+<img src='{{ "/assets/images/" | prepend: site.baseurl | append : "ga1.JPG"}}'>
 이 사진의 톱니바퀴 모양을 누르면 
 ![ga2](assets/images/ga2.JPG) 
 이 화면이 나타난다. 데이터 스트림을 클릭하고 웹 항목에 블로그 주소를 입력하여 스트림을 추가한다. 
