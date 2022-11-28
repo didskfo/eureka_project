@@ -77,7 +77,18 @@ disqus를 사용하였을 때 오류가 나서 다른 방법으로 utterances를
 
 ### 4단계 내용 수정하기 
 
-## 1. posts 수정하기 
+## 1. title 수정하기 
+
+defaults.yml 파일 내용을 
+```
+home:
+  heading: "STUDYLOG"
+  subheading: "Record My Studies"
+  banner: "assets/images/banners/studyimg1.jpg"
+```
+이렇게 수정하였다. 
+
+## 2. posts 수정하기 
 
 관련있는 git, github, jekyll부터 markdown, html, css에 대한 내용을 정리한 post로 수정했다. 
 
