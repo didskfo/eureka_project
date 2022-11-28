@@ -72,7 +72,7 @@ analytics:
 
   google:
     tracking_id: "G-82M8GC2VRG"
-    anonymize_ip: 
+    anonymize_ip: true
 
 # If you want to generate website sitemap, you can set true
 # sitemap: false
