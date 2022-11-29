@@ -85,6 +85,34 @@ home:
 
 관련있는 git, github, jekyll부터 markdown, html, css에 대한 내용을 정리한 post로 수정했다. 
 
+_posts 폴더에 YYYY-MM-DD-파일이름.md 파일을 추가하고 안에 
+```
+layout: post
+title: About Git
+subtitle: 깃이란 무엇인가
+author: YangNarae
+categories: git
+banner: "assets/images/banners/git.png"
+tags: git
+```
+이런 형태의 코드를 추가하고 밑에 내용을 작성했다. 
+
+## 3. about.html 수정하기 
+
+about.html 파일의 내용을 
+```
+<h2>About</h2>
+
+<p>
+<a href="https://github.com/didskfo">github</a>
+</p>
+
+<p>
+email: didskfo@kookmin.ac.kr
+</p>
+```
+이렇게 수정하였다. 
+
 ### 5단계 favicon 추가하기 
 
 ## 1. favicon 만들기 
